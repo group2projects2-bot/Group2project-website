@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>CSS Float and Overflow Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-left: 5px;
+        }
+
+       
+        .float-container {
+            width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #444;
+            overflow: auto;
+        }
+
+        .float-box {
+            width: 150px;
+            height: 120px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .left-box {
+            width: 30%;
+            float: left;
+            background-color: #bcd9ff;
+        }
+
+        .right-box {
+            float: right;
+            background-color: #d2f0d2;
+        }
+
+        
+        .float-text {
+            width: 200px;
+            margin: 10px;
+            float: left;
+            font-size: 14px;
+        }
+
+        
+        .overflow-horizontal {
+            width: 320px;
+            height: 120px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px dashed red;
+            background-color: #fff3c4;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        .overflow-vertical {
+            width: 320px;
+            height: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px dashed red;
+            background-color: #fff3c4;
+            overflow-y: scroll;
+        }
+
+        .overflow-both {
+            width: 320px;
+            height: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px dashed red;
+            background-color: #fff3c4;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<h2>CSS Float and Overflow Demo</h2>
+</center>
+
+
+<div class="float-container">
+    <div class="float-box left-box">
+        HALLOOO
+    </div>
+
+    <div class="float-text">
+        How much wood would a woodchuck chuck if a woodchuck could chuck wood?
+        He would chuck, he would, as much as he could, and chuck as much wood
+        As a woodchuck would if a woodchuck could chuck wood
+    </div>
+
+    <div class="float-box right-box">
+        HIIIIIII
+    </div>
+</div>
+
+
+<div class="overflow-horizontal">
+   A single cloud can weigh as much as a million tonnes,
+    and your brain uses around 400 to 500 calories a day. 
+</div>
+
+<div class="overflow-vertical">
+    <br>
+     j<br>
+     a<br>
+     c<br>
+     o<br>
+     b<br>
+     d<br>
+     d<br>
+     c<br>
+</div>
+
+<div class="overflow-both">
+    WOAhhh WOAH WOAHHHH PWEDE MA SCROLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+    LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+    LLLLLLLLLLLLLLLLLLLLLLLL
+</div>
+
+</body>
+</html>

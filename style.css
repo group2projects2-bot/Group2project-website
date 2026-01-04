@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #222;
+  color: #fff;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Tabs Section */
+.tabs {
+  background: #fff;
+  padding: 3rem 2rem;
+}
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.tabs-nav label {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #e0e0e0;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.tabs-nav label:hover {
+  background: #bdbdbd;
+}
+
+.tab-content {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+#tab1:checked ~ .tabs-content .tab1,
+#tab2:checked ~ .tabs-content .tab2,
+#tab3:checked ~ .tabs-content .tab3 {
+  display: block;
+}
+
+/* Hide radio buttons */
+.tabs input[type="radio"] {
+  display: none;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 2rem;
+  background: #f0f0f0;
+  text-align: center;
+}
+.testimonial-box {
+  margin: 1rem auto;
+  max-width: 500px;
+  background: white;
+  padding: 1rem 2rem;
+  border-left: 5px solid #2196f3;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.testimonial-box span {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Contact */
+.contact {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button {
+  padding: 0.8rem;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+.contact .note {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .tabs-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

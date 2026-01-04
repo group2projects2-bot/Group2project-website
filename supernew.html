@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Display Attributes Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+    }
+
+
+
+    table {
+      border-collapse: collapse;
+      width: 55%;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+
+
+   .inline {
+      display: inline;
+      background-color: #b3e6ff;
+      padding: 5px 10px;
+      margin: 5px;
+    }
+
+
+    .block {
+      display: block;
+      background-color: #90ee90;
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+
+    .inline-block {
+      display: inline-block;
+      background-color: #f28b82;
+      padding: 10px 20px;
+      margin: 5px;
+    }
+
+    .icon {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Unordered List:</h2>
+  <ul type="square">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h2>Ordered List:</h2>
+  <ol type="I">
+    <li>Plan</li>
+    <li>Desig</li>
+    <li>Develop</li>
+    <li>Deploy</li>
+  </ol>
+
+  <h2>📊 Table</h2>
+  <table>
+    <tr>
+      <th>Language</th>
+      <th>Type</th>
+      <th>Use Case</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Markup</td>
+      <td>Structure</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>Style</td>
+      <td>Design</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>Scripting</td>
+      <td>Interactivity</td>
+    </tr>
+  </table>
+
+  <h2>🎨 Display Attributes</h2>
+  <span class="inline">Inline</span>
+  <span class="inline">Inline</span>
+
+  <div class="block">Block Element</div>
+
+  <div class="inline-block">Inline-Block 1</div>
+  <div class="inline-block">Inline-Block 2</div>
+
+</body>
+</html>

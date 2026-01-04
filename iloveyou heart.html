@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Heart Filled with I Love You Text</title>
+  <style>
+    body {
+      background: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Courier New', monospace;
+    }
+    svg {
+      width: 400px;
+      height: 380px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.3s ease;
+      overflow: visible;
+    }
+    svg:hover {
+      transform: scale(1.1);
+    }
+    text {
+      fill: crimson;
+      font-size: 10px;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heart filled with I Love You text">
+
+  <!-- Heart shape path -->
+  <defs>
+    <path id="heartShape" d="
+      M100 30
+      C100 10, 65 10, 50 40
+      C35 10, 0 30, 50 90
+      C100 150, 150 90, 150 40
+      C135 10, 100 10, 100 30
+      Z
+    "/>
+    <clipPath id="heartClip">
+      <use href="#heartShape"/>
+    </clipPath>
+  </defs>
+
+  <!-- Light heart shape background -->
+  <use href="#heartShape" fill="#ffccd5" />
+
+  <!-- Text group clipped inside heart -->
+  <g clip-path="url(#heartClip)">
+    <!-- Position multiple text lines inside the heart -->
+    <text x="10" y="40">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="55">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="70">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="85">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="100">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="115">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="130">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="145">I Love You I Love You I Love You I Love You I Love You</text>
+    <text x="10" y="160">I Love You I Love You I Love You I Love You I Love You</text>
+  </g>
+
+</svg>
+
+</body>
+</html>

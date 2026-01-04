@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exceptional CSS-Only Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CSSOnlySite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="hero">
+      <h1>Pure CSS Magic</h1>
+      <p>No JavaScript. Just HTML & CSS.</p>
+    </section>
+  </header>
+
+  <section id="features" class="tabs">
+    <input type="radio" id="tab1" name="tab" checked>
+    <input type="radio" id="tab2" name="tab">
+    <input type="radio" id="tab3" name="tab">
+    
+    <div class="tabs-nav">
+      <label for="tab1">Fast</label>
+      <label for="tab2">Responsive</label>
+      <label for="tab3">Beautiful</label>
+    </div>
+
+    <div class="tabs-content">
+      <div class="tab-content tab1">
+        <h2>Fast Performance</h2>
+        <p>This site loads blazingly fast because it's just HTML and CSS. No scripts, no delays.</p>
+      </div>
+      <div class="tab-content tab2">
+        <h2>Responsive Design</h2>
+        <p>Optimized for desktops, tablets, and phones using pure CSS media queries.</p>
+      </div>
+      <div class="tab-content tab3">
+        <h2>Beautifully Designed</h2>
+        <p>Carefully crafted layouts and animations make this site stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-box">
+      <p>"This is the best CSS-only site I've ever seen!"</p>
+      <span>- Alex T.</span>
+    </div>
+    <div class="testimonial-box">
+      <p>"I didn't know CSS could do this much. Impressive!"</p>
+      <span>- Jamie L.</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" disabled>Send Message</button>
+    </form>
+    <p class="note">*Form is disabled (no JavaScript)</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CSSOnlySite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

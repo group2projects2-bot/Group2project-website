@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Pseudo Elements Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f3ff;
+    padding: 20px;
+  }
+
+  .card {
+    background: #f0e4ff;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 480px;
+    margin: 20px 0;
+    border: 1px solid #c9a8ff;
+  }
+
+  .card::before {
+    content: "★";
+    color: #b880ff;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -20px;
+    font-size: 20px;
+  }
+
+  p.dropcap::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #7a48d8;
+  }
+
+  p.lead::first-line {
+    font-weight: bold;
+    color: #5a29a6;
+  }
+
+  ul li::marker {
+    color: #b067ff;
+  }
+
+  ::selection {
+    background: #caa6ff;
+    color: #fff;
+  }
+
+  button {
+    padding: 8px 14px;
+    background: #a05cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #8c3ff2;
+  }
+
+  dialog {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f2e6ff;
+  }
+
+  dialog::backdrop {
+    background: rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+
+<button onclick="document.querySelector('dialog').showModal()">Open Dialog</button>
+
+<dialog>
+  <h3>CRUSH KO SI GOJO!!<h3>
+  <p>MIKEYY!!!!</p>
+  <button onclick="this.closest('dialog').close()">Close</button>
+</dialog>
+
+<div class="card">
+  <h2>Simple Pseudo Elements</h2>
+  <p class="lead">Solo Leveling is the best anime ever! Try selecting text.</p>
+  <p class="dropcap">ASAWA KO SI GOJO hahahaha</p>
+
+  <ul>
+    <li>ASAWA KO SI MIKEY</li>
+    <li>ASAWA KO SI KAGEYAMA</li>
+  </ul>
+</div>
+
+<p>DADDYYYYYYY ROBBBBBBB!!!</p>
+
+</body>
+</html>

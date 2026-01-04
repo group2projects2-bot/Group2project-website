@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Lockers to Life | A Journey of Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-blue: #e0f2f1;
+            --paper: #ffffff;
+            --accent: #9ced58;
+            --text: #2c3e50;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-blue);
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(224, 242, 241, 0.8), rgba(224, 242, 241, 0.8)), 
+                        url('https://images.unsplash.com/photo-1523050335191-329482d7071e?auto=format&fit=crop&w=1200&q=80'); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        header h1 { font-family: 'Patrick Hand', cursive; font-size: 5rem; margin: 0; }
+        header p { font-size: 1.5rem; font-style: italic; }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        .page-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Styling for Introduction and Conclusion */
+        .book-end {
+            border: 3px dashed var(--accent);
+            background: #f7fdfc;
+            text-align: center;
+        }
+
+        .image-frame {
+            width: 100%;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #eee;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .image-frame img { 
+            width: 100%; 
+            height: 400px; 
+            object-fit: cover; 
+            display: block; 
+            border-radius: 5px;
+        }
+
+        .content { width: 100%; line-height: 1.8; }
+        .content h2 { font-family: 'Patrick Hand', cursive; font-size: 2.8rem; margin-top: 0; color: #1a252f; }
+        
+        .highlight {
+            background-color: var(--accent);
+            padding: 0 8px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        #backToTop {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: var(--text);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            background: #2c3e50;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .page-section:nth-child(even) .image-frame { transform: rotate(1.5deg); }
+        .page-section:nth-child(odd) .image-frame { transform: rotate(-1.5deg); }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h1>FROM LOCKERS TO LIFE</h1>
+        <p>"When the Bell Rings, Life Begins"</p>
+        <span>By Group 2</span>
+    </header>
+
+    <div class="container">
+
+        <section class="page-section book-end">
+            <div class="content">
+                <h2>The Prologue</h2>
+                <p>Every great journey begins with a single step—or in our case, the turn of a locker key. This is the story of how we grew, learned, and found ourselves within these school walls. We invite you to flip through the pages of our shared history.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="FirstBell.jpg" alt="First Bell"></div>
+            <div class="content">
+                <h2>1. The First Bell</h2>
+                <p>The school bell rang loudly, and the sound reverberated throughout the school. Today marked the start of learning, making friends, and realizing our dreams. The loud bell was also the sound of laughter and footsteps of the students as they walked to the school.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="Place.jpg" alt="Finding Our Place"></div>
+            <div class="content">
+                <h2>2. Finding Our Place</h2>
+                <p>Initially, school was intimidating. All were <span class="highlight">seeking to see where they fit</span>. There were many new faces and many different subjects to learn. Some students were shy, and some were confident.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="Along.jpg" alt="Friends laughing"></div>
+            <div class="content">
+                <h2>3. Friends Made in Classrooms</h2>
+                <p>Friendships began to emerge in group work, in snacks, and in quiet talks. The classroom became a place of instruction, as well as laughter, trust, and memory.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="4.jpg" alt="Group project"></div>
+            <div class="content">
+                <h2>4. Lessons Beyond Books</h2>
+                <p>We gained more than just knowledge of math and history. We gained <span class="highlight">patience during difficult quizzes</span>, the boldness to speak in front of people, and the kindness whenever we helped each other out.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="Tired.jpg" alt="Studying hard"></div>
+            <div class="content">
+                <h2>5. Challenges Along the Way</h2>
+                <p>There were times filled with stress—stress for exams and stress for deadlines. Sometimes we felt like we couldn't go on, but <span class="highlight">difficulties made us stronger</span> and more determined to carry on.</p>
+            </div>
+        </section>
+
+       <section class="page-section">
+    <div class="image-frame"><img src="Guiding.jpg" alt="Teacher Helping"></div>
+    <div class="content">
+        <h2>6. Teachers Who Guided Us</h2>
+        <p>Teachers were our pathfinders. They gave us the words of encouragement we needed to persevere. They reminded us to put faith in ourselves even when gaining knowledge was difficult.</p>
+    </div>
+</section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="WAY.jpg" alt="Library"></div>
+            <div class="content">
+                <h2>7. Memories in Every Corner</h2>
+                <p>From the noisy cafeteria to the quiet library, every corner of the school held a memory. Every corner was a part of history that helped shape who we are today.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="image-frame"><img src="Together.jpg" alt="Sunset walk"></div>
+            <div class="content">
+                <h2>8. Growing Up Together</h2>
+                <p>As the years passed, we changed. We became more <span class="highlight">self-assured and responsible</span>. The sunrise and sunset of the school years went by, and suddenly, graduation was upon us.</p>
+            </div>
+        </section>
+
+  <section class="page-section">
+    <div class="image-frame">
+        <img src="Grad.jpg" alt="Graduation Day">
+    </div>
+    <div class="content">
+        <h2>9. Ready for the World</h2>
+        <p>The lockers where our books were stored were replaced by the storage of memories. We were ready to go out the school gates to face the world.</p>
+    </div>
+</section>
+
+        <section class="page-section">
+            <div class="image-frame">
+                <img src="LIFE.jpg" alt="Future Horizon">
+            </div>
+            <div class="content">
+                <h2>10. From Lockers to Life</h2>
+                <p>The school was only the beginning. The education, the associations, and the experiences that we had remained with us as we continued on into our futures. <span class="highlight">From lockers to life, we took it all with us.</span></p>
+            </div>
+        </section>
+
+        <section class="page-section book-end">
+            <div class="content">
+                <h2>The Epilogue</h2>
+                <p>As we close this chapter, we realize that the end of school is just the beginning of everything else. We carry the lessons, the laughter, and the friendships with us into the unknown. Thank you for being part of our story.</p>
+                <p><strong>The End</strong></p>
+            </div>
+        </section>
+
+        <a href="#top" id="backToTop">Back to Top</a>
+
+    </div>
+
+    <footer>
+        <p>A Project by Group 2 &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
